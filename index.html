@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <section class="section_2">
+        <div class="container section_2_container">
+            <div class="section_2_text">
+                <div class="sec_2_title">
+                    <h1 class="title">Completed projects</h1>
+                    <p class="text_3">
+                        Only a small part of the work performed by our company is presented on the site. For 14 years on
+                        in the construction
+                        market we have made happy more than 1000 families
+                    </p>
+                </div>
+                <div class="about">
+                    <div>
+                        <h3 class="text_4">City:</h3>
+                        <span class="text_5">Rostov-on-Don<br>LCD admiral</span>
+                    </div>
+                    <div>
+                        <h3 class="text_4">Apartment area:</h3>
+                        <span class="text_5">81 m2</span>
+                    </div>
+                    <div>
+                        <h3 class="text_4">Repair time:</h3>
+                        <span class="text_5">3.5 months</span>
+                    </div>
+                    <div>
+                        <h3 class="text_4">Repair Cost:</h3>
+                        <span class="text_5">Upon request</span>
+                    </div>
+                </div>
+                <div class="pointers">
+                    <button class="prev_btn" onclick="plusSlides(-1)"><img id="left" src="./images/left.svg"></button>
+                    <span class="rectangles" onclick="currentSlide(1)"></span>
+                    <span class="rectangles" onclick="currentSlide(2)"></span>
+                    <span class="rectangles" onclick="currentSlide(3)"></span>
+                    <button class="next_btn" onclick="plusSlides(1)"><img id="right" src="./images/right.svg"></button>
+                </div>
+            </div>
+            <div class="section_2_navigation">
+                <nav>
+                    <ul class="cities">
+                        <button class="cities_link" onclick="currentSlide(1)">Rostov-on-Don,
+                            Admiral</button>
+                        <button class="cities_link" onclick="currentSlide(2)">Sochi Thieves</button>
+                        <button class="cities_link" onclick="currentSlide(3)">Rostov-on-Don
+                            Patriotic</button>
+                    </ul>
+                </nav>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./images/rostov admiral.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./images/rostov patriotic.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="./images/sochi.png" style="width:100%">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

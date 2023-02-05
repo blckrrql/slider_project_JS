@@ -1,0 +1,242 @@
+@font-face {
+    src: url("./fonts/NunitoSans/NunitoSans-Regular.ttf");
+    font-family: "NunitoSans Regular";
+}
+
+@font-face {
+    src: url("./fonts/YesevaOne/YesevaOne-Regular.ttf");
+    font-family: "YesevaOne Regular";
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'NunitoSans Regular', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+.section_2 {
+    position: relative;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    padding: 107px 134px 124px;
+}
+
+.section_2_container {
+    margin: 0 auto;
+    display: flex;
+    height: max-content;
+    width: 1171px;
+    box-sizing: border-box;
+}
+
+.section_2_text {
+    width: 442px;
+    height: 552.28px;
+    padding-right: 50px;
+}
+
+.title {
+    width: 253px;
+    height: 66px;
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 70px;
+    margin: 0px;
+}
+
+.text_3 {
+    width: 442px;
+    height: 86px;
+    font-family: 'NunitoSans Regular', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-top: 34px;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 442px;
+}
+
+.text_4 {
+    width: 221px;
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-bottom: 0px;
+    padding-top: 34px;
+    margin: 0px;
+}
+
+.text_5 {
+    width: 221px;
+    font-family: 'NunitoSans Regular', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 9px;
+    margin: 0px;
+}
+
+.pointers {
+    padding-top: 85px;
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    margin-right: 29.5px;
+    width: 40.5px;
+}
+
+#right {
+    margin-left: 12px;
+    width: 40.5px;
+}
+
+.prev_btn,
+.next_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+.prev_btn:hover,
+.next_btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+.rectangles {
+    margin-right: 17.5px;
+    height: 9.5px;
+    width: 9.5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.rectangles:hover {
+    background-color: rgb(255, 255, 255);
+    ;
+}
+
+.section_2_navigation {
+    width: 442px;
+    height: 552.28px;
+}
+
+.cities {
+    width: 623px;
+    height: 24px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 45px;
+    margin: 0px;
+    font-family: 'YesevaOne Regular', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.cities_link {
+    background-color: transparent;
+    border: none;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.cities_link:hover {
+    color: #E3B873;
+    transition: 0.3s;
+    text-decoration-line: underline;
+}
+
+.active_link {
+    color: #E3B873;
+    transition: 0.3s;
+    text-decoration-line: underline;
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 679px;
+    height: 482px;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .3
+    }
+
+    to {
+        opacity: 1
+    }
+}
